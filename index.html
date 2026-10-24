@@ -324,11 +324,11 @@ body:not([data-screen="flight"]):not([data-screen="replay"]) #hud{opacity:0!impo
 .rp-brand small{font-family:var(--body);font-weight:500;font-size:9px;letter-spacing:.12em;color:var(--dim)}
 .rp-skip{position:absolute;right:calc(var(--sar) + 16px);top:calc(var(--sat) + 14vh);pointer-events:auto!important;min-height:38px;font-size:15px}
  #banner{position:fixed;left:0;right:0;top:30%;z-index:8;display:flex;flex-direction:column;align-items:center;gap:4px;pointer-events:none;opacity:0;transform:scale(1.12);transition:opacity .5s,transform .7s cubic-bezier(.2,.9,.2,1);text-align:center;font-family:var(--disp);text-shadow:0 4px 30px rgba(0,0,0,.6)}
-#banner.on{opacity:1;transform:none}#banner.off{opacity:0;transform:translateY(-14px)}
+#banner.on{opacity:1;transform:none}#banner.fail.on{transition-delay:1.2s}#banner.off{opacity:0;transform:translateY(-14px)}
 #banner small{font-size:15px;letter-spacing:.34em;text-transform:uppercase;color:var(--acc2);font-weight:600;padding:0 20px}
 #banner b{font-size:clamp(56px,17vw,84px);font-weight:800;line-height:.95;letter-spacing:.02em;text-transform:uppercase;font-style:normal}
 #banner.ok b{background:linear-gradient(180deg,#fff,#ffd29a 60%,#ff9b3d);-webkit-background-clip:text;background-clip:text;color:transparent}
-#banner.fail b{color:var(--bad)}#banner i{font-style:normal;font-size:30px;letter-spacing:.2em;color:var(--acc)}
+#banner.fail b{color:var(--bad);font-size:clamp(38px,11vw,58px)}#banner i{font-style:normal;font-size:30px;letter-spacing:.2em;color:var(--acc)}
 #banner::before{content:'';position:absolute;left:0;right:0;top:-30px;bottom:-30px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.45),transparent);z-index:-1}
 .nogl{position:fixed;inset:0;display:grid;place-items:center;padding:30px;text-align:center;pointer-events:auto}
 .nogl h2{font-family:var(--disp);font-size:40px}
