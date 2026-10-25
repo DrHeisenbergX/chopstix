@@ -1,6 +1,6 @@
 /* CHOPSTIX Service Worker – offline-first, versionierter Cache.
    Spielstände liegen im localStorage und werden hier NIE angefasst. */
-const VERSION = '1.4.0';
+const VERSION = '1.4.1';
 const CACHE = 'chopstix-' + VERSION;
 const FILES = ["./", "./apple-touch-icon.png", "./favicon.ico", "./favicon.png", "./fonts/barlow-condensed-latin-500-normal.woff2", "./fonts/barlow-condensed-latin-600-normal.woff2", "./fonts/barlow-condensed-latin-700-normal.woff2", "./fonts/barlow-condensed-latin-800-normal.woff2", "./fonts/barlow-latin-400-normal.woff2", "./fonts/barlow-latin-500-normal.woff2", "./fonts/barlow-latin-600-normal.woff2", "./fonts/barlow-latin-700-normal.woff2", "./game.js", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./index.html", "./manifest.webmanifest"];
 
